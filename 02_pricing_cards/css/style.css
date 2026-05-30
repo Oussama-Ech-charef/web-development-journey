@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #22c55e;
+    --dark-color: #111827;
+    --light-color: #ffffff;
+    --gray-color: #6b7280;
+    --background-color: #f8fafc;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+}
+
+.pricing {
+    padding: 100px 80px;
+    text-align: center;
+}
+
+.pricing h2 {
+    font-size: 3rem;
+    color: var(--dark-color);
+    margin-bottom: 20px;
+}
+
+.pricing-description {
+    color: var(--gray-color);
+    max-width: 600px;
+    margin: 0 auto 60px;
+    line-height: 1.8;
+}
+
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.pricing-card {
+    background-color: var(--light-color);
+
+    width: 350px;
+
+    padding: 40px 30px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+
+    position: relative;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+}
+
+.pricing-card h3 {
+    font-size: 2rem;
+    color: var(--dark-color);
+    margin-bottom: 15px;
+}
+
+.plan-description {
+    color: var(--gray-color);
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.price {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+}
+
+.price span {
+    font-size: 1rem;
+    color: var(--gray-color);
+}
+
+.pricing-card ul {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.pricing-card ul li {
+    margin-bottom: 15px;
+    color: var(--dark-color);
+}
+
+.pricing-card button {
+    width: 100%;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background-color: var(--primary-color);
+
+    color: white;
+
+    font-size: 1rem;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.pricing-card button:hover {
+    opacity: 0.9;
+}
+
+.featured {
+    transform: scale(1.05);
+    border: 2px solid var(--primary-color);
+}
+
+.featured:hover {
+    transform: scale(1.08);
+}
+
+.badge {
+    position: absolute;
+
+    top: -15px;
+    right: 20px;
+
+    background-color: var(--primary-color);
+
+    color: white;
+
+    padding: 8px 15px;
+
+    border-radius: 20px;
+
+    font-size: 0.8rem;
+
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+
+    .pricing {
+        padding: 60px 20px;
+    }
+
+    .pricing h2 {
+        font-size: 2.2rem;
+    }
+
+    .pricing-card {
+        width: 100%;
+    }
+
+    .featured {
+        transform: scale(1);
+    }
+
+    .featured:hover {
+        transform: translateY(-10px);
+    }
+
+}
