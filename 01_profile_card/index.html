@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechFlow</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -18,10 +22,10 @@
             <h2>TechFlow</h2>
 
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
 
         </nav>
@@ -30,7 +34,7 @@
 
     <main>
 
-        <section>
+        <section id="home"  class="hero">
 
             <h1>Build Modern Websites For Your Business</h1>
 
@@ -42,57 +46,89 @@
 
         </section>
 
-        <section>
+        <section id="services" class="services">
 
             <h2>Our Services</h2>
 
-            <div>
+            <div class="services-container">
 
-                <h3>Web Development</h3>
+                <div class="service-card">
+                    <h3>Web Development</h3>
+                    <p>
+                        Modern websites built with the latest technologies.
+                    </p>
+                </div>
 
-                <p>
-                    Modern websites built with the latest technologies.
-                </p>
+                <div class="service-card">
+                    <h3>Responsive Design</h3>
+                    <p>
+                        Perfect experience on all devices.
+                    </p>
+                </div>
 
-            </div>
-
-            <div>
-
-                <h3>Responsive Design</h3>
-
-                <p>
-                    Perfect experience on all devices.
-                </p>
-
-            </div>
-
-            <div>
-
-                <h3>UI / UX Design</h3>
-
-                <p>
-                    Clean and professional user interfaces.
-                </p>
+                <div class="service-card">
+                    <h3>UI / UX Design</h3>
+                    <p>
+                        Clean and professional user interfaces.
+                    </p>
+                </div>
 
             </div>
 
         </section>
 
-        <section>
+        <section id="about"  class="about">
 
-            <h2>About Us</h2>
+            <div class="about-content">
+
+                <div class="about-text">
+
+                    <h2>About TechFlow</h2>
+
+                    <p>
+                        We help businesses build modern, fast and responsive websites that improve their online presence.
+                    </p>
+
+                    <p>
+                        Our team focuses on clean code, modern design and excellent user experience.
+                    </p>
+
+                </div>
+
+                <div class="about-image">
+
+                    <img src="images/about.jpg" alt="About Us">
+
+                </div>
+
+            </div>
+
+        </section>
+        <section id="contact"  class="contact">
+
+            <h2>Ready To Start Your Project?</h2>
 
             <p>
-                TechFlow helps businesses create modern digital products.
+                Let's build something amazing together.
             </p>
+
+            <button>Contact Us</button>
 
         </section>
 
     </main>
 
-    <footer>
+   <footer>
 
-        <p>© 2026 TechFlow. All rights reserved.</p>
+        <h3>TechFlow</h3>
+
+        <p>
+            Building modern web experiences.
+        </p>
+
+        <p>
+            © 2026 All Rights Reserved
+        </p>
 
     </footer>
 
